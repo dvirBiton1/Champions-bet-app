@@ -1,0 +1,79 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/champ"
+    tools:context=".DAL.ActivityLeaderboard">
+
+
+    <TextView
+        android:id="@+id/title11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="              "
+        android:textColor="@color/white"
+        android:fontFamily="@font/titles_font"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/table_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/title11"
+        android:textStyle="bold"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rankk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/little_title"
+            android:text=" Rank"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/nickk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nickname"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/little_title"
+            android:layout_marginStart="30dp"
+            />
+
+        <TextView
+            android:id="@+id/sscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/little_title"
+            android:layout_marginStart="30dp"/>
+
+    </LinearLayout>
+
+        <ListView
+            android:id="@+id/table__"
+            android:gravity="center"
+            android:layout_below="@id/table_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:divider="@color/black"
+            android:dividerHeight="2dp"
+            android:listSelector="#091C55" />
+
+    </RelativeLayout>

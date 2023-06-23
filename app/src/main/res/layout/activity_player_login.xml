@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".player.PlayerLoginActivity"
+    android:background="@drawable/bg_color">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_champions" />
+
+    <Button
+        android:id="@+id/login_player"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordPlayer"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/green_btn"
+        android:backgroundTint="#4CAF50"
+
+        android:onClick="onClickPlayerLogin"
+        android:text="Login"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/register_player"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Unregistred"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/green_btn"
+        android:backgroundTint="#4CAF50"
+        android:gravity="center"
+        android:onClick="onClickPlayerRegister"
+
+        android:text="Register"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/passwordPlayer"
+        android:layout_below="@+id/userNamePlayer"
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/userNamePlayer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:hint="Email"
+        android:background="@color/white"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/Unregistred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_player"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/titles_font"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="New Account?"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        android:typeface="normal" />
+</RelativeLayout>

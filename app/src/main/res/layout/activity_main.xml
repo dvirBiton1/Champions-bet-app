@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_color">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_champions" />
+
+    <Button
+        android:id="@+id/manager"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickManager"
+        android:text="@string/manager"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic|bold"
+        android:layout_below="@+id/Log_As"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@color/black"
+        android:shape="rectangle"
+        android:background="@drawable/green_btn"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/player"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickPlayer"
+        android:shape="rectangle"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic|bold"
+        android:text="@string/player"
+        android:layout_below="@+id/manager"
+        android:backgroundTint="#4CAF50"
+        android:background="@drawable/green_btn"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/Log_As"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_as"
+        android:textColor="@color/black"
+        android:fontFamily="@font/titles_font"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textStyle="italic|bold"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        tools:text="Log As:"
+        android:layout_below="@+id/logo"
+        />
+
+</RelativeLayout>
